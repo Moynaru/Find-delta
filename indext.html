@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careful dangerous doggo</title>
+    
+    <style>
+           
+
+    
+
+
+          h1 
+          {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(255, 255, 255);
+            outline-style: inset;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+           }
+           body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+               
+        }
+       
+       .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+        }
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<h1> Careful dangerous doggo</h1>
+<body>
+    
+    <div class="container" id="container">
+        <img src="https://cdn.discordapp.com/attachments/718637800353824800/1357569524823625863/if-we-think-about-it-delta-is-actually-the-closest-to-cid-v0-wobfgmj24cfc1.png?ex=67f0aea5&is=67ef5d25&hm=bc10f2f92f57c47f97b17054d4052016bbaebbb1588cf5d91513952bf8cc2372&" id="img" class="image" alt="Imagem">
+    </div>
+    <script>
+        let img = document.getElementById('img');
+        let container = document.getElementById('container');
+
+        container.addEventListener('click', () => {
+            img.classList.add('visible');
+        });
+    </script>
+</body>
+</html>
